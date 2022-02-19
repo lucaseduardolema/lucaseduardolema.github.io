@@ -65,6 +65,9 @@ section#topo p {
     text-align: center;
     font-size: 40px;
 }
+#conteudo2 p {
+    text-align: justify;
+}
 .castelo, .caicara {
     padding-bottom: 15px;
 }
@@ -134,24 +137,12 @@ footer h5, li {
     h3 {
         font-size: 29px;
     }
-    footer, p, h5, li, a {
+    footer p, h5, li, a {
         font-size: 12px;
     }
     #pe .redesFooter {
         text-align: center;
         width: 100%;
-    }
-    #pe .redesFooter ul li a {
-        padding-left: 30px;
-        display: inline-flex;
-    }
-    #pe .contatoFooter {
-        text-align: center;
-        padding: 0;
-        width: 120px;
-    }
-    #pe .horarioFooter {
-        width: 150px;
     }
 }
 
@@ -179,33 +170,19 @@ footer h5, li {
     h3 {
         font-size: 29px;
     }
-    footer, p, h5, li, a {
+    footer p, h5, li, a {
         font-size: 12px;
     }
     #pe .redesFooter {
         text-align: center;
         width: 100%;
     }
-    #pe .redesFooter ul li a {
-        padding-left: 30px;
-        display: inline-flex;
-    }
-    #pe .contatoFooter {
-        text-align: center;
-        padding: 0;
-        width: 120px;
-    }
-    #pe .horarioFooter {
-        width: 150px;
-    }
+    
 }
 
 /*Medium devices (tablets, 768px e maiores)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    #pe .redesFooter ul li a {
-        padding-left: 30px;
-        display: inline-flex;
-    }    
+    
 }
 
 /*Large devices (desktops, 992px e maiores)*/

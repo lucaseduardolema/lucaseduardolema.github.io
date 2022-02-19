@@ -1,0 +1,32 @@
+* {
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: #fff;
+}
+p {
+    text-align: justify;
+}
+#topo {
+    padding-top: 80px;
+    text-align: center;
+}
+#topo p {
+    text-align: center;
+}
+#portfolio div.col-md-6 {
+    /* border: 1px solid red; */
+    margin: 20px 0;
+}
+iframe {
+    height: 600px;
+    width: 100%;
+}
+
+/* #pe div.col-12 p {
+    display: inline;
+    align-items: center;
+    text-align: center;
+} */
