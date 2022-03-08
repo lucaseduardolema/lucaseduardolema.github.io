@@ -4,183 +4,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucas Eduardo</title>
+  <title>Personal Portfolio</title>
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Fontawesome 6 -->
+  <script src="https://kit.fontawesome.com/beac8e7ccf.js" crossorigin="anonymous"></script>
 
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/laptop-code-solid.svg" type="image/x-icon">
 </head>
 <body>
-    <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Lucas Eduardo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-          </ul>
-        </div>
-    </div>
+  <!-- inicio nav -->
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li><a href="#welcome-section">Sobre</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#profile-link">Contato</a></li>
+    </ul>
   </nav>
+  <!-- fim nav -->
 
-  <!-- Header -->
-  <header id="topo" class="pb-4">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-					<h1>Eu sou Lucas Eduardo</h1>
-					<p>Programer and Web Designer</p>
-					<img class="img-fluid opacity-75" src="img/0190827_231936-removebg-preview.png" alt="boy" srcset="">		
-        </div>
-      </div>
+  <!-- inicio boas vindas -->
+  <section id="welcome-section">
+    <h1>Olá Mundo! Eu sou Lucas</h1>
+    <p>a web developer</p>
+  </section>
+  <!-- fim boas vindas -->
+
+  <!-- inicio grid projetos -->
+  <section id="projects">
+    <h2>Alguns dos meus projetos</h2>
+    <div class="grid">
+      <a class="project-tile" href="https://lucaseduardolema.github.io/spotify-clone/" target="_blank">
+        <iframe src="https://lucaseduardolema.github.io/spotify-clone/" scrolling="no" frameborder="0"></iframe>
+        <p>Clone do Spotify</p>
+      </a>
+
+      <a class="project-tile" href="https://lucaseduardolema.github.io/saru/" target="_blank">
+        <iframe src="https://lucaseduardolema.github.io/saru/" scrolling="no" frameborder="0"></iframe>
+        <p>Página de Comércio</p>
+      </a>
+
+      <a class="project-tile" href="https://lucaseduardolema.github.io/game-AH-64/" target="_blank">
+        <iframe src="https://lucaseduardolema.github.io/game-AH-64/" scrolling="no" frameborder="0"></iframe>
+        <p>Game AH-64</p>
+      </a>
+
+      <a class="project-tile" href="https://lucaseduardolema.github.io/finans/" target="_blank">
+        <iframe src="https://lucaseduardolema.github.io/finans/" scrolling="no" frameborder="0"></iframe>
+        <p>Landing Page Finans</p>
+      </a>
+
+      <a class="project-tile" href="https://lucaseduardolema.github.io/game-mata-mosquito/" target="_blank">
+        <iframe src="https://lucaseduardolema.github.io/game-mata-mosquito/" scrolling="no" frameborder="0"></iframe>
+        <p>Game Mata Mosquito</p>
+      </a>
+
+      <a class="project-tile" href="https://lucaseduardolema.github.io/app-calculadora/" target="_blank">
+        <iframe src="https://lucaseduardolema.github.io/app-calculadora/" scrolling="no" frameborder="0"></iframe>
+        <p>Calculadora JavaScript</p>
+      </a>
+
+      <a class="project-tile" href="https://codepen.io/lucaseduardolema/full/BamEPLX" target="_blank">
+        <iframe src="https://codepen.io/lucaseduardolema/full/BamEPLX" scrolling="no" frameborder="0"></iframe>
+        <p>Formulário</p>
+      </a>
+
+      <a class="project-tile" href="https://codepen.io/lucaseduardolema/full/eYeoGzO" target="_blank">
+        <iframe src="https://codepen.io/lucaseduardolema/full/eYeoGzO" scrolling="no" frameborder="0"></iframe>
+        <p>Página Simples</p>
+      </a>
     </div>
-  </header>
+  </section>
+  <!-- fim grid projetos -->
 
-	<!-- About -->
-	<section id="sobre" class="pb-4">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<h2>Lucas Eduardo</h2>
-					<hr style="width: 100%;">
-				</div>
-				<div class="col-sm-12">
-					<p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-					<h3>Habilidades</h3>
-					<p>Marcação HTML</p>
-					<div class="progress">
-						<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-					<p class="pt-2">Estilos CSS</p>
-					<div class="progress">
-						<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-					<p class="pt-2">Estilos Bootstrap</p>
-					<div class="progress">
-						<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-					<p class="pt-2">JavaScript</p>
-					<div class="progress">
-						<div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <!-- inicio contato -->
+  <section id="contato">
+    <h2>Vamos trabalhar juntos...</h2>
+    <p>Como gosta do seu café?</p>
 
-	<!-- Portfolio -->
-	<section id="portfolio" class="pb-4">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h2>Portfólio</h2>
-					<p>Sed placerat ornare tellus. Morbi placerat tortor tellus, ut tincidunt turpis euismod vel. Sed maximus libero nisi, sit amet tempor elit ultrices at.</p>
-				</div>
+    <div>
+      <a href="#" target="_blank">
+        <i class="fa-brands fa-facebook"></i> Facebook
+      </a>
 
-				<div class="col-md-6 text-center">
-					<h3>Spotify - Clone</h3>
-					<p>Clone do site Spotify, responsivo para telas e feito com Bootstrap 4</p>
-					<iframe src="https://lucaseduardolema.github.io/spotify-clone/" scrolling="no" frameborder="no"></iframe>
-					<a class="btn btn-light" href="https://lucaseduardolema.github.io/spotify-clone/" target="_blank">Abrir em Nova Aba</a>
-				</div>
+      <a href="#" target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
 
-				<div class="col-md-6 text-center">
-					<h3>Saruê</h3>
-					<p>Site de um estabelecimento comecial feito com Bootstrap 5</p>
-					<iframe src="https://lucaseduardolema.github.io/saru/" scrolling="no" frameborder="no"></iframe>
-					<a class="btn btn-light" href="https://lucaseduardolema.github.io/saru/" target="_blank">Abrir em Nova Aba</a>
-				</div>
+      <a id="profile-link" href="https://github.com/lucaseduardolema" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
 
-				<div class="col-md-6 text-center">
-					<h3>Finans</h3>
-					<p>Site de vendas de um produto financeiro feito com Bootstrap 4</p>
-					<iframe src="https://lucaseduardolema.github.io/finans/" scrolling="no" frameborder="no"></iframe>
-					<a class="btn btn-light" href="https://lucaseduardolema.github.io/finans/" target="_blank">Abrir em Nova Aba</a>
-				</div>
+      <a href="https://www.freecodecamp.org/lucaseduardolema" target="_blank">
+        <i class="fa-brands fa-free-code-camp"></i> freeCodeCamp
+      </a>
 
-				<div class="col-md-6 text-center">
-					<h3>Game Mata Mosquito</h3>
-					<p>Aplicação em captura de elementos na tela feito com JavaScript</p>
-					<iframe src="https://lucaseduardolema.github.io/game-mata-mosquito/" scrolling="no" frameborder="no"></iframe>
-					<a class="btn btn-light" href="https://lucaseduardolema.github.io/game-mata-mosquito/" target="_blank">Abrir em Nova Aba</a>
-				</div>
-			</div>
-		</div>
-	</section>
+      <a href="https://codepen.io/lucaseduardolema" target="_blank">
+        <i class="fa-brands fa-codepen"></i> Code Pen
+      </a>
 
-	<!-- Contato -->
-	<section id="contato" class="pb-4">
-		<div class="container"> 
-			<div class="row">
-				<div class="col-md-6 text-center">
-					<h2>Contato</h2>
-					<div class="mb-3">
-						<label for="exampleFormControlInput1" class="form-label">Seu E-mail</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-					</div>
-					<div class="mb-3">
-						<label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-					</div>
-					<button class="btn btn-light">Enviar</button>
-				</div>
-				<div class="col-md-6 text-center">
-					<p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      		<p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      		<p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-				</div>
-			</div>
-		</div>
-	</section>
+      <a href="mailto:#" target="_blank">
+        <i class="fa-solid fa-at"></i> Envie um e-mail
+      </a>
+    
+      <a href="tel:#" target="_blank">
+        <i class="fa-solid fa-mobile-screen-button"></i> Me ligue
+      </a>
+    </div>
+  </section>
+  <!-- fim contato -->
 
-	<!-- footer -->
-	<footer id="pe" class="container-fluid py-5">
-		<div class="row">
-			<div class="col-6 d-flex justify-content-center">
-				Logo
-			</div>
-			<div class="col-6 d-flex justify-content-center">
-				<nav class="navbar">
-					<ul class="navbar-nav me-auto mb-2 mb-md-0">
-						<li class="nav-item">
-							<a class="nav-item" href="#"><i class="fa fa-facebook-official"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item" href="#"><i class="fa fa-instagram"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item" href="#"><i class="fa fa-snapchat"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item" href="#"><i class="fa fa-pinterest-p"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item" href="#"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-item" href="#"><i class="fa fa-linkedin"></i></i></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="col-12 d-flex justify-content-center pt-3">
-				<p>Powered by <strong>LEMA</strong></p>
-			</div>
-		</div>
-	</footer>
-
-
-  <!-- script bootstrap -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- inicio footer -->
+  <footer>
+    <!-- <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p> -->
+    <p>Criado por Lucas Eduardo</p>
+  </footer>
+  <!-- fim footer -->
 </body>
 </html>
