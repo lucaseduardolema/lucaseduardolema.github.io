@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mais Saúde</title>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body onresize="hardResponse()">
+  <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mais Saúde</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-link">
+                <a class="nav-link" aria-current="page" href="#calc">Calculadora</a>
+              </li>
+              <li class="nav-link">
+                <a class="nav-link" aria-current="page" href="#prod1">400 Receitas Fit Low Carb</a>
+              </li>
+              <li class="nav-link">
+                <a class="nav-link" aria-current="page" href="#prod2">Desafio 19 Dias</a>
+              </li>
+              <li class="nav-link">
+                <a class="nav-link" aria-current="page" href="#prod3">Programa Emagrecer de Bike</a>
+              </li>
+              <li class="nav-link">
+                <a class="nav-link" aria-current="page" href="#prod4">Pare de Gostar Do Que Te Faz Mal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  
+  <section class="container">
+    <div class="text-center">
+      <h1>Calculadora IMC</h1>
+      <p>Estar acima do peso aumenta o risco de uma série de doenças graves e problemas de saúde.</p>
+    </div>
+    
+    <div>
+      <p id="demo"></p>
+    </div>
+    
+    <div>
+      <h2>Quer descobrir seu IMC?</h2>
+      <table class="table table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th colspan="3">Veja a Interpretação do IMC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>IMC</th>
+            <th colspan="2">Classificação</th>
+          </tr>
+          <tr>
+            <td>MENOR QUE 16</td>
+            <td>BAIXO PESO MUITO GRAVE</td>
+          </tr>
+          <tr>
+            <td>ENTRE 16 E 16.9</td>
+            <td>BAIXO PESO GRAVE</td>
+          </tr>
+          <tr>
+            <td>ENTRE 17 E 18.4</td>
+            <td>BAIXO PESO</td>
+          </tr>
+          <tr>
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>PESO NORMAL</td>
+          </tr>
+          <tr>
+            <td>ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO GRAU I</td>
+          </tr>
+          <tr>
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE GRAU II</td>
+          </tr>
+          <tr>
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAU III</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="calc">
+      <div class="row px-2">
+        <label for="altura">Centímetros <span>(ex: 180 se você tem 1.80 metro)</span></label>
+        <input id="altura" type="text" maxlength="3" placeholder="Altura">
+
+        <label for="peso">Quilos <span>(ex: 79)</span></label>
+        <input id="peso" type="text" maxlength="3" placeholder="Peso">
+      </div>
+      
+      <div id="areaResult" class="shadow p-2 bg-body rounded">
+        <p id="result">Insira sua altura e peso...</p>
+      </div>
+
+      <div class="d-grid gab-2 col-6 mx-auto">
+        <button class="btn btn-success" onclick="calculo()" type="submit">Calcular</button>
+        <button class="btn btn-primary" onclick="limpa()" type="submit">Limpar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="publi" class="container-fluid">
+    inserir adsense
+  </section> -->
+
+  <section class="container">
+    <div class="text-center">
+      <h3>Se preocupa com sua saúde?</h3>
+      <p style="text-align: center;">Confira aqui alguns produtos que podem te ajudar a manter uma boa condição física</p>
+    </div>
+
+    <div id="vitrine" class="row row-cols-2">
+      <div id="prod1" class="card">
+        <img src="img/feed 2 39,90.png" class="card-img-top" alt="400 Receitas Fit">
+        <div class="card-body">
+          <h5 class="card-title">400 Receitas Fit Low Carb</h5>
+          <p class="card-text">E-book de receitas para se alimentar de forma prazerosa e emagrecedora!</p>
+          <a href="https://go.hotmart.com/V63866479V" target="_blank" class="btn btn-primary">Conheça mais!</a>
+        </div>
+      </div>
+
+      <div id="prod2" class="card">
+        <img src="img/25.png" class="card-img-top" alt="Desafio 19 Dias">
+        <div class="card-body">
+          <h5 class="card-title">Desafio 19 Dias</h5>
+          <p class="card-text">Metodo 100% natural, elimine a gordura localizada e emagraça em apenas 19 dias!</p>
+          <a href="https://go.hotmart.com/Q68308824C" target="_blank" class="btn btn-primary">Conheça mais!</a>
+        </div>
+      </div>
+
+      <div id="prod3" class="card">
+        <img src="img/22.jpg.webp" class="card-img-top" alt="Emagrecer de Bike">
+        <div class="card-body">
+          <h5 class="card-title">Programa Emagrecer de Bike</h5>
+          <p class="card-text">Descubra o método usado por um cardiologista para perder mais de 20KG usando apenas uma bicicleta!</p>
+          <a href="https://go.hotmart.com/P68309804B" target="_blank" class="btn btn-primary">Conheça mais!</a>
+        </div>
+      </div>
+
+      <div id="prod4" class="card">
+        <img src="http://sendopaleo.com/wp-content/uploads/2015/08/sendopaleo_banner336x280.jpg" class="card-img-top" alt="Livro Pare de Gostar Do Que Te Faz Mal">
+        <div class="card-body">
+          <h5 class="card-title">Pare de Gostar Do Que Te Faz Mal</h5>
+          <p class="card-text">Um e-book essencial para quem deseja seguir o estilo de vida Paleo e ter o corpo e a saúde que sempre sonhou.</p>
+          <a href="https://go.hotmart.com/N68310607D" target="_blank" class="btn btn-primary">Conheça mais!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid">
+    <p>Powered by LEMA</p>
+  </footer>
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

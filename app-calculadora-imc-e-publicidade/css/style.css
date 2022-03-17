@@ -1,0 +1,58 @@
+body {
+  padding-top: 5rem;
+  min-height: 75rem;
+}
+
+p {
+  text-align: justify;
+}
+
+section {
+  padding-bottom: 2vh;
+}
+
+#demo {
+  min-height: 10vh;
+}
+
+
+table {
+  width: 100px;
+}
+
+@media (max-width: 400px) {
+  #demo {
+    min-height: 30vh;
+  }
+}
+
+#calc * {
+  margin-bottom: 10px;
+}
+
+#calc span {
+  font-size: 12px;
+}
+
+#areaResult {
+  border: 1px solid black;
+  min-height: 9vh;
+}
+
+#publi {
+  min-height: 15vh;
+  background-color: red;
+}
+
+footer {
+  background-color: black;
+  color: azure;
+  min-height: 10vh;
+}
+
+footer p {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+}
