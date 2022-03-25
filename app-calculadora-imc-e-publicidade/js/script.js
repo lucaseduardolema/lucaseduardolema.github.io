@@ -62,7 +62,7 @@ function calculo() {
     classificacao = "Obesidade grau III"
   }
   
-  document.getElementById('result').innerHTML = ("Você possui IMC igual a " + M + ", sendo considerado como: " + classificacao)
+  document.getElementById('result').innerHTML = (`Você possui IMC igual a ${M}, sendo considerado como: ${classificacao}`)
 }  
 
 function limpa() {
