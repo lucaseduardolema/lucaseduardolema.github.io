@@ -4,128 +4,245 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-
+  <title>Portfólio - Lucas Eduardo</title>
   <!-- custom css -->
-  <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&display=swap" rel="stylesheet">
   <!-- Fontawesome 6 -->
   <script src="https://kit.fontawesome.com/beac8e7ccf.js" crossorigin="anonymous"></script>
-
-  <link rel="shortcut icon" href="img/laptop-code-solid.svg" type="image/x-icon">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/img/laptop-code-solid.svg" type="image/x-icon">
 </head>
+
 <body>
-  <!-- inicio nav -->
-  <nav id="navbar">
-    <ul class="nav-list">
-      <li><a href="#welcome-section">Sobre</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#profile-link">Contato</a></li>
-    </ul>
-  </nav>
-  <!-- fim nav -->
+  <header id="header">
+    <section>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+  
+          <a class="navbar-brand" href="https://github.com/lucaseduardolema">Lucas Eduardo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-link">
+                <a class="nav-link" aria-current="page" href="#about">Sobre</a>
+              </li>
+              <li class="nav-link">
+                <a class="nav-link" aria-current="page" href="#projects">Projetos</a>
+              </li>
+              <li class="nav-link">
+                <a class="nav-link" aria-current="page" href="#contact">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
 
-  <!-- inicio boas vindas -->
-  <section id="welcome-section">
-    <h1>Olá Mundo! Eu sou Lucas</h1>
-    <p>a web developer</p>
-  </section>
-  <!-- fim boas vindas -->
+    <section id="welcome-section" class="container-fluid">
+      <h1 id="apresentacao"></h1>
+      <h2 id="sub-press"></h2>
+    </section>
+  </header>
 
-  <!-- inicio grid projetos -->
-  <section id="projects">
-    <h2>Alguns dos meus projetos</h2>
-    <div class="grid">
-      <a class="project-tile" href="https://lucaseduardolema.github.io/spotify-clone/" target="_blank">
-        <iframe src="https://lucaseduardolema.github.io/spotify-clone/" scrolling="no" frameborder="0"></iframe>
-        <p>Clone do Spotify</p>
-      </a>
-
-      <a class="project-tile" href="https://lucaseduardolema.github.io/saru/" target="_blank">
-        <iframe src="https://lucaseduardolema.github.io/saru/" scrolling="no" frameborder="0"></iframe>
-        <p>Página de Comércio</p>
-      </a>
-
-      <a class="project-tile" href="https://lucaseduardolema.github.io/game-AH-64/" target="_blank">
-        <iframe src="https://lucaseduardolema.github.io/game-AH-64/" scrolling="no" frameborder="0"></iframe>
-        <p>Game AH-64</p>
-      </a>
-
-      <a class="project-tile" href="https://lucaseduardolema.github.io/finans/" target="_blank">
-        <iframe src="https://lucaseduardolema.github.io/finans/" scrolling="no" frameborder="0"></iframe>
-        <p>Landing Page Finans</p>
-      </a>
-
-      <a class="project-tile" href="https://lucaseduardolema.github.io/game-mata-mosquito/" target="_blank">
-        <iframe src="https://lucaseduardolema.github.io/game-mata-mosquito/" scrolling="no" frameborder="0"></iframe>
-        <p>Game Mata Mosquito</p>
-      </a>
-
-      <a class="project-tile" href="https://lucaseduardolema.github.io/app-calculadora/" target="_blank">
-        <iframe src="https://lucaseduardolema.github.io/app-calculadora/" scrolling="no" frameborder="0"></iframe>
-        <p>Calculadora JavaScript</p>
-      </a>
-
-      <a class="project-tile" href="https://codepen.io/lucaseduardolema/full/BamEPLX" target="_blank">
-        <iframe src="https://codepen.io/lucaseduardolema/full/BamEPLX" scrolling="no" frameborder="0"></iframe>
-        <p>Formulário</p>
-      </a>
-
-      <a class="project-tile" href="https://codepen.io/lucaseduardolema/full/eYeoGzO" target="_blank">
-        <iframe src="https://codepen.io/lucaseduardolema/full/eYeoGzO" scrolling="no" frameborder="0"></iframe>
-        <p>Página Simples</p>
-      </a>
-
-      <a class="project-tile" href="https://lucaseduardolema.github.io/app-calculadora-imc-e-publicidade/" target="_blank">
-        <iframe src="https://lucaseduardolema.github.io/app-calculadora-imc-e-publicidade/" scrolling="no" frameborder="0"></iframe>
-        <p>Calculadora IMC e Publicidade</p>
-      </a>
+  <section id="transit" class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p id="citacao"></p>
+          <button id="forca" class="btn btn-dark">Use a Força</button>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- fim grid projetos -->
+  
+  <main>
+    <section id="about" class="container">
+      <div class="row align-items-center">
+        <h2 class="text-center">Sobre mim</h2>
+        <div class="col-md-6">
+          <img class="img-fluid" src="assets/img/foto.jpg" alt="Foto de Lucas">
+        </div>
+        <div class="col-md-6">
+          <p>Sou apaixonado por tecnologia, aos 14 anos fiz meu primeiro curso profissionalizante na área, montagem e manutenção de computadores, o qual me proporcionou o ingresso no Exército Brasileiro aos 19 anos, onde fui inicialmente designado a trabalhar na seção de tecnologia permanecendo no Exército por 8 anos.</p>
+          <p>Atualmente estudo Desenvolvimento de Softwares na Trybe uma escola que ensina a programar, a aprender e a trabalhar. Acredito em ações que possam gerar um impacto positivo na vida das pessoas e trabalho sempre em prol disso.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- inicio contato -->
-  <section id="contato">
-    <h2>Vamos trabalhar juntos...</h2>
-    <p>Como gosta do seu café?</p>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Alguns dos meus projetos</h2>
+            <p>elaborados usando tecnologias como HTML 5, CSS 3, JavaScript, Bootstrap... entre outras</p>
+          </div>
+          <div class="col">
+            <a class="project-tile" href="https://lucaseduardolema.github.io/spotify-clone/" target="_blank">
+              <img class="img-fluid" src="assets/img/clone-spotify.png" alt="Clone Spotify">
+            </a>
+            <a class="btn btn-outline-success" href="https://lucaseduardolema.github.io/spotify-clone/" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://github.com/lucaseduardolema/lucaseduardolema.github.io/tree/main/spotify-clone" target="_blank">Ver Código</a>
+          </div>
 
-    <div>
-      <a href="#" target="_blank">
-        <i class="fa-brands fa-facebook"></i> Facebook
-      </a>
+          <div class="col">
+            <a class="project-tile" href="https://lucaseduardolema.github.io/saru/" target="_blank">
+              <img class="img-fluid" src="assets/img/comercio.png" alt="Pagina de Comercio">
+            </a>
+            <a class="btn btn-outline-success" href="https://lucaseduardolema.github.io/saru/" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://github.com/lucaseduardolema/lucaseduardolema.github.io/tree/main/saru" target="_blank">Ver Código</a>
+          </div>
 
-      <a href="#" target="_blank">
-        <i class="fa-brands fa-instagram"></i> Instagram
-      </a>
+          <div class="col">
+            <a class="project-tile" href="https://lucaseduardolema.github.io/app-calculadora-imc-e-publicidade/" target="_blank">
+              <img class="img-fluid" src="assets/img/calculadora-imc-publi.png" alt="Calculadora de IMC">
+            </a>
+            <a class="btn btn-outline-success" href="https://lucaseduardolema.github.io/app-calculadora-imc-e-publicidade/" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://github.com/lucaseduardolema/lucaseduardolema.github.io/tree/main/app-calculadora-imc-e-publicidade" target="_blank">Ver Código</a>
+          </div>
 
-      <a id="profile-link" href="https://github.com/lucaseduardolema" target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
+          <div class="col">
+            <a class="project-tile" href="https://codepen.io/lucaseduardolema/full/BamEPLX" target="_blank">
+              <img class="img-fluid" src="assets/img/formulario.png" alt="Formulário">
+            </a>
+            <a class="btn btn-outline-success" href="https://codepen.io/lucaseduardolema/full/BamEPLX" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://codepen.io/lucaseduardolema/pen/BamEPLX" target="_blank">Ver Código</a>
+          </div>
 
-      <a href="https://www.freecodecamp.org/lucaseduardolema" target="_blank">
-        <i class="fa-brands fa-free-code-camp"></i> freeCodeCamp
-      </a>
+          <div class="col">
+            <a class="project-tile" href="https://lucaseduardolema.github.io/finans/" target="_blank">
+              <img class="img-fluid" src="assets/img/landing-page.png" alt="Landing Page">
+            </a>
+            <a class="btn btn-outline-success" href="https://lucaseduardolema.github.io/finans/" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://github.com/lucaseduardolema/lucaseduardolema.github.io/tree/main/finans" target="_blank">Ver Código</a>
+          </div>
 
-      <a href="https://codepen.io/lucaseduardolema" target="_blank">
-        <i class="fa-brands fa-codepen"></i> Code Pen
-      </a>
+          <div class="col">
+            <a class="project-tile" href="https://lucaseduardolema.github.io/game-AH-64/" target="_blank">
+              <img class="img-fluid" src="assets/img/jogo-2d-com-animacao.png" alt="Jogo 2D Animado">
+            </a>
+            <a class="btn btn-outline-success" href="https://lucaseduardolema.github.io/game-AH-64/" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://github.com/lucaseduardolema/lucaseduardolema.github.io/tree/main/game-AH-64" target="_blank">Ver Código</a>
+          </div>
 
-      <a href="mailto:#" target="_blank">
-        <i class="fa-solid fa-at"></i> Envie um e-mail
-      </a>
-    
-      <a href="tel:#" target="_blank">
-        <i class="fa-solid fa-mobile-screen-button"></i> Me ligue
-      </a>
-    </div>
-  </section>
-  <!-- fim contato -->
+          <div class="col">
+            <a class="project-tile" href="https://lucaseduardolema.github.io/game-mata-mosquito/" target="_blank">
+              <img class="img-fluid" src="assets/img/jogo-2d.png" alt="Jogo 2D">
+            </a>
+            <a class="btn btn-outline-success" href="https://lucaseduardolema.github.io/game-mata-mosquito/" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://github.com/lucaseduardolema/lucaseduardolema.github.io/tree/main/game-mata-mosquito" target="_blank">Ver Código</a>
+          </div>
 
-  <!-- inicio footer -->
-  <footer>
-    <!-- <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p> -->
-    <p>Criado por Lucas Eduardo</p>
-  </footer>
-  <!-- fim footer -->
+          <div class="col">
+            <a class="project-tile" href="https://lucaseduardolema.github.io/app-calculadora/" target="_blank">
+              <img class="img-fluid" src="assets/img/calculadora-js.png" alt="Calculadora">
+            </a>
+            <a class="btn btn-outline-success" href="https://lucaseduardolema.github.io/app-calculadora/" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://github.com/lucaseduardolema/lucaseduardolema.github.io/tree/main/app-calculadora" target="_blank">Ver Código</a>
+          </div>
+
+          <div class="col">
+            <a class="project-tile" href="https://codepen.io/lucaseduardolema/full/eYeoGzO" target="_blank">
+              <img class="img-fluid" src="assets/img/pagina-simples.png" alt="Pagina Simples">
+            </a>
+            <a class="btn btn-outline-success" href="https://codepen.io/lucaseduardolema/full/eYeoGzO" target="_blank">Visitar</a>
+            <a class="btn btn-outline-primary" href="https://codepen.io/lucaseduardolema/pen/eYeoGzO" target="_blank">Ver Código</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="transit2" class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>Existem Alguns Easter Eggs no site</h3>
+            <p>você consegue encontrar todos?</p>
+          </div>
+          <div class="col-sm-6">
+            <input id="inputCode" type="text" placeholder="Digite aqui o código">
+            <p>Inportante!</p>
+            <p>Não use espaços</p>
+            <p>Não use letras maíusculas</p>
+          </div>
+          <div class="col-sm-6">
+            <p>Encontrados</p>
+            <ol id="eggs"></ol>
+            <button id="show" class="btn btn-danger">Revelar todos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 class="display-1">Vamos trabalhar juntos...</h3>
+            <p>Como gosta do seu café?</p>
+          </div>
+
+          <div class="col-sm-12">
+            <a href="#" target="_blank">
+              <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+          </div>
+          
+          <div class="col-sm-12">
+            <a href="#" target="_blank">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <a id="profile-link" href="https://github.com/lucaseduardolema" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <a href="https://www.freecodecamp.org/lucaseduardolema" target="_blank">
+              <i class="fa-brands fa-free-code-camp"></i> freeCodeCamp
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <a href="https://codepen.io/lucaseduardolema" target="_blank">
+              <i class="fa-brands fa-codepen"></i> Code Pen
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <a href="mailto:#lucaseduardolema@gmail.com" target="_blank">
+              <i class="fa-solid fa-at"></i> Envie um e-mail
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <a href="tel:#" target="_blank">
+              <i class="fa-solid fa-mobile-screen-button"></i> Me ligue
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- cheet -->
+  <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
+  <!-- jquery v3.6 -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- custom js -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
