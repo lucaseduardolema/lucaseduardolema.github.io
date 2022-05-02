@@ -71,3 +71,12 @@ function showEggs() {
   document.getElementById('inputCode').setAttribute('disabled', '');
 }
 document.getElementById('show').addEventListener('click', showEggs);
+
+
+// const contactMe = new Notification('Olá, como vai você?', {
+//   body: 'Vamos nos conectar no Linkedin'
+// });
+
+// contactMe.onclick = () => {
+//   window.open('https://www.linkedin.com/in/lucas-eduardo-m-alves/');
+// }
